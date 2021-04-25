@@ -11,7 +11,7 @@ def get_embeddings(filenames):
     # prepare the face for the model, e.g. center pixels
     samples = preprocess_input(samples, version=2)
     # create a vggface model or Load the model
-    model = VGGFace(model='vgg16', include_top=False, input_shape=(224, 224, 3), pooling='avg')
+    model = VGGFace(model='resnet50', include_top=False, input_shape=(224, 224, 3), pooling='avg')
     # perform prediction
     yhat = model.predict(samples)
     return yhat
