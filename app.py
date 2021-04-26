@@ -17,8 +17,8 @@ if __name__ == "__main__":
         embeddings = get_embeddings(filenames)
         score, threshold = is_match(embeddings[0], embeddings[1])
         if(score < threshold):
-            st.write("Face is a match")
+            st.header("Face is a match")
         else:
-            st.write("Face is not a match")
+            st.header("Face is not a match")
     else:
         st.write("")
