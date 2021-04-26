@@ -10,5 +10,5 @@ keras-vggface==0.6
 Keras>=2.4.3
 Keras-Applications>=1.0.8
 Keras-Preprocessing>=1.1.2
-python3-opencv
+opencv-python==4.2.0.34
 mtcnn==0.1.0
